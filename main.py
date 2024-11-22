@@ -22,10 +22,10 @@ with col1:
     compute = st.button("Compute")
 
 with col2:
-    with st.container(border=True):
-        if compute:
-            I,P,H = Elec_Para(V,R,T)
-            st.write(f'load current = {I} A')
-            st.write(f'Load power = {P} W')
-            st.write(f'Heat Energy = {H} Wh')
+    # with st.container(border=True):
+    if compute:
+        I,P,H = Elec_Para(V,R,T)
+        st.write(f'load current = {I} A')
+        st.write(f'Load power = {P} W')
+        st.write(f'Heat Energy = {H} Wh')
 
